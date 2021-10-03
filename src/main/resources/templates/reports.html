@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" xlmns:th="http://www.thymeleaf.org" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Reportes</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Tienda Genérica</h1>
+    </div>
+
+    <!--Navegación-->
+    <nav>
+        <div class="menu" id="main_menu">
+		    <a th:href="@{/usuarios}">Usuarios</a>
+            <a href="customers.html">Clientes</a>
+            <a href="providers.html">Proveedores</a>
+            <a href="products.html">Productos</a>
+            <a href="sales.html">Ventas</a>
+            <a th:href="@{/reportes}">Reportes</a>
+            <a href="login.html">Cerrar Sesión</a>
+
+        </div>
+    </nav>
+
+
+    <fieldset class="frames">
+        <legend class="legend">Reportes</legend>
+
+        <div id="reports_div" >
+                <a th:href="@{/ListadeUsuarios}">Listado de usuarios</a>
+                <a href="customers_list.html">Listado de clientes</a>
+                <a href="total_sales.html">Ventas por cliente</a>           
+
+        </div>
+
+        
+
+    </fieldset>
+
+
+
+</body>
+
+</html>

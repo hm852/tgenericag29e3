@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es" xlmns:th="http://www.thymeleaf.org"  >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Reporte:Listado de Usuarios</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Tienda Genérica</h1>
+    </div>
+
+    <!--Navegación-->
+    <nav>
+        <div class="menu" id="main_menu">
+            <a th:href="@{/usuarios}">Usuarios</a>
+            <a href="customers.html">Clientes</a>
+            <a href="providers.html">Proveedores</a>
+            <a href="products.html">Productos</a>
+            <a href="sales.html">Ventas</a>
+            <a th:href="@{/reportes}">Reportes</a>
+            <a href="login.html">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <!--Página-->
+
+
+    <fieldset class="frames" >
+        <legend class="legend" >Listado de Usuarios</legend>
+
+        <div class="dividers" >
+            
+            <table class="tables" id="user_list_table1" >
+
+                <thead>
+                    <th>Cédula</th>
+                    <th>Nombres</th>
+                    <th>Correo electrónico</th>
+                    <th>Usuario</th>
+                    <th>Contraseña</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                    
+                </thead>
+
+                <tbody>
+                     
+                    <tr  th:each="usuario:${usuarios}">
+                    
+                    <td th:text="${usuario.id}" ></td>
+                    
+                    <td th:text="${usuario.name}" ></td>
+                    <td th:text="${usuario.mail}" ></td>
+                    <td th:text="${usuario.username}" ></td>
+                    <td th:text="${usuario.password}" ></td>
+                     <!---->
+                   
+                    <td class="buttons"> <button>Editar</button> </td>
+                    <td class="buttons"> <button>Eliminar</button> </td>
+                    
+                    </tr>
+                    
+                </tbody>
+
+
+
+            </table>
+
+
+        </div>
+
+    </fieldset>
+
+
+
+
+</body>
+
+</html>

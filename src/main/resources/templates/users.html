@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es" xlmns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Usuarios</title>
+</head>
+
+<div>
+    <h1>Tienda Genérica</h1>
+</div>
+
+<body>
+
+    <nav>
+        <div class="menu" id="main_menu">
+            <a th:href="@{/usuarios}">Usuarios</a>
+            <a href="customers.html">Clientes</a>
+            <a href="providers.html">Proveedores</a>
+            <a href="products.html">Productos</a>
+            <a href="sales.html">Ventas</a>
+            <a th:href="@{/reportes}">Reportes</a>
+            <a href="login.html">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+
+
+    <fieldset class="frames" id="users_frame1">
+
+        <legend>Gestión de Usuarios</legend>
+
+        <div class="dividers">
+            <form class="userform" id="users_form1">
+
+                <label class="labels" id="user_label_doc">Documento</label>
+                <input class="input" id="user_input_doc" type="text" value="">
+
+                <label class="labels" id="user_label_names">Nombre completo</label>
+                <input class="input" id="user_input_names" type="text" value="">
+
+                <label class="labels" id="user_label_mail">Correo electrónico</label>
+                <input class="input" id="user_input_mail" type="text" value="" placeholder="correo@dominio.com">
+            </form>
+        </div>
+
+        <div class="dividers">
+
+            <form class="userform" id="users_form2">
+
+                <label class="labels" id="user_label_id">Usuario</label>
+                <input class="input" id="user_input_id" type="text" value="">
+
+                <label class="labels" id="user_label_pwd">Contraseña</label>
+                <input class="input" id="user_input_pwd" type="password" value="">
+            </form>
+        </div>
+
+        <div class="buttons" id="buttons_divider">
+
+            <button class="buttons" id="user_read" type="submit">Consultar</button>
+            <button class="buttons" id="user_create" type="submit">Crear</button>
+            <button class="buttons" id="user_update" type="submit">Acualizar</button>
+            <button class="buttons" id="user_delete" type="submit">Eliminar</button>
+
+        </div>
+
+    </fieldset>
+
+    <footer>Pie de página - Tienda Generica</footer>
+
+</body>
+
+</html>
