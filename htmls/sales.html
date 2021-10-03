@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Ventas</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Tienda Genérica</h1>
+    </div>
+
+    <!--Navegación-->
+    <nav>
+        <div class="menu" id="main_menu">
+            <a href="users.html">Usuarios</a>
+            <a href="customers.html">Clientes</a>
+            <a href="providers.html">Proveedores</a>
+            <a href="products.html">Productos</a>
+            <a href="sales.html">Ventas</a>
+            <a href="reports.html">Reportes</a>
+            <a href="login.html">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <!--Página-->
+
+    <fieldset>
+        <legend class="legend">Ventas</legend>
+
+        <div class="sales_divider1">
+
+            <form class="userform">
+                <!--Consulta del cliente-->
+                <label class="labels" id="sales_label_cedula">Cédula</label>
+                <input class="inputs" type="text" name="" id="sales_input_cedula" required>
+                <button class="buttons_sales" type="submit" value="">Consultar</button>
+
+                <label class="labels" id="sales_label_names">Cliente</label>
+                <input class="inputs" type="text" name="" id="sales_input_cliente" disabled>
+
+                <label class="labels" id="sales_label_concec">Consec.</label>
+                <input class="inputs" type="text" name="" id="sales_input_consec" disabled>
+            </form>
+        </div>
+
+
+        <div class="sales_divider1">
+            <!--Lista de productos-->
+            <input class="inputs" type="text" name="" id="sales_input_cod" required>
+            <!--Id producto-->
+            <button class="buttons_sales" type="submit" value="">Consultar</button>
+            <!--Boton consulta-->
+            <input class="inputs" type="text" name="" id="sales_input_nameprod" required>
+            <!--Nombre-->
+            <input class="inputs" type="text" name="" id="sales_input_quant" required>
+            <!--Cantidad-->
+            <input class="inputs" type="text" name="" id="sales_input_total_value" required>
+            <!--Valor Total-->
+        </div>
+
+        <div class="sales_divider1">
+            <!--Lista de productos-->
+            <input class="inputs" type="text" name="" id="sales_input_cod" required>
+            <!--Id producto-->
+            <button class="buttons_sales" type="submit" value="">Consultar</button>
+            <!--Boton consulta-->
+            <input class="inputs" type="text" name="" id="sales_input_nameprod" required>
+            <!--Nombre-->
+            <input class="inputs" type="text" name="" id="sales_input_quant" required>
+            <!--Cantidad-->
+            <input class="inputs" type="text" name="" id="sales_input_total_value" required>
+            <!--Valor Total-->
+        </div>
+
+        <div class="sales_divider1">
+            <!--Lista de productos-->
+            <input class="inputs" type="text" name="" id="sales_input_cod" required>
+            <!--Id producto-->
+            <button class="buttons_sales" type="submit" value="">Consultar</button>
+            <!--Boton consulta-->
+            <input class="inputs" type="text" name="" id="sales_input_nameprod" required>
+            <!--Nombre-->
+            <input class="inputs" type="text" name="" id="sales_input_quant" required>
+            <!--Cantidad-->
+            <input class="inputs" type="text" name="" id="sales_input_total_value" required>
+            <!--Valor Total-->
+        </div>
+
+        <div id="sale_subtotals">
+            <!--Subtotales-->
+            <label class="labels" id="sales_label_total_sale">Total Venta</label>
+            <input class="inputs" type="text" name="" id="sales_input_total sale" disabled>
+
+            <label class="labels" id="sales_label_total_iva">Total IVA</label>
+            <input class="inputs" type="text" name="" id="sales_input_total_iva" disabled>
+
+            <label class="labels" id="sales_label_total_mas_iva">Total con IVA</label>
+            <input class="inputs" type="text" name="" id="sales_input_total_mas_iva" disabled>
+
+        </div>
+
+        <div class="sales_divider1" >
+            <!--Boton Confirmar-->
+            <button class="buttons_sales" type="submit" value="">Confirmar</button>
+        </div>
+
+    </fieldset>
+
+
+</body>
+
+</html>

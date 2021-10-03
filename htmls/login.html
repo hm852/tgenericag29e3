@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Inicio de Sesión</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Tienda Genérica</h1>
+    </div>
+
+    <div >  
+
+        <fieldset id="login_frame">
+
+            <legend class="legend" id="legend_login">Inicio de Sesión</legend>
+
+            <div >
+                <form class="userform" id="login_userform">
+                    <div>
+                        <label class="labels" id="login_user_label">Usuario:</label>
+                        <input class="login_inputs" type="text" id="login_user_input" required >
+                    </div>
+    
+                    <div>
+                        <label class="labels" id="login_password_label">Contraseña:</label>
+                        <input class="login_inputs" type="password" id="login_passrowd_input" required >
+                    </div>
+                    </form>
+
+            </div>
+           
+                <div id="login_buttons_divider" >                   
+                    <button class="buttons" type="submit" onclick="window.location.href='menu.html'" >Aceptar</button>
+                    <button class="buttons" type="button">Cancelar</button>
+                </div>
+
+            
+        </fieldset>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Clientes</title>
+
+</head>
+<body>
+    <div>
+        <h1>Tienda Genérica</h1>
+    </div>
+    <body>
+        <nav>
+            <div class="menu" id="main_menu">
+                <a href="users.html">Usuarios</a>
+                <a href="customers.html">Clientes</a>
+                <a href="providers.html">Proveedores</a>
+                <a href="products.html">Productos</a>
+                <a href="sales.html">Ventas</a>
+                <a href="reports.html">Reportes</a>
+                <a href="login.html">Cerrar Sesión</a>
+            </div>
+        </nav>
+
+
+        <fieldset class="frames" id="customers_frame1">
+
+            <legend>Gestión de Clientes</legend>
+    
+            <div class="dividers">
+                <form class="userform" id="customers_form1">
+    
+                    <label class="labels" id="customers_label_doc">Cédula</label>
+                    <input class="input" id="customers_input_doc" type="text" value="" required>
+    
+                    <label class="labels" id="customers_label_names">Nombre Completo</label>
+                    <input class="input" id="customers_input_names" type="text" value="" required>
+    
+                    <label class="labels" id="customers_label_mail">Dirección</label>
+                    <input class="input" id="customers_input_mail" type="text" value="" required >
+                </form>
+            </div>
+    
+            <div class="dividers">
+    
+                <form class="userform" id="customers_form2">
+    
+                    <label class="labels" id="customers_label_id">Teléfono</label>
+                    <input class="input" id="customers_input_id" type="text" value="">
+    
+                    <label class="labels" id="customers_label_mail">Correo electrónico</label>
+                    <input class="input" id="customers_input_mai0l" type="text" value="" placeholder="correo@dominio.com" >
+                </form>
+            </div>
+    
+            <div class="buttons" id="buttons_divider">
+    
+                <button class="buttons" id="customers_read" type="submit">Consultar</button>
+                <button class="buttons" id="customers_create" type="submit">Crear</button>
+                <button class="buttons" id="customers_update" type="submit">Acualizar</button>
+                <button class="buttons" id="customers_delete" type="submit">Eliminar</button>
+    
+            </div>
+    
+        </fieldset>
+        
+
+</body>
+</html>
